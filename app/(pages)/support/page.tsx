@@ -136,9 +136,51 @@ export default function SupportPage() {
         </div>
       </main>
 
-      {/* Placeholder for resources section */}
-      <section>
-        
+      {/* Available Resources Section */}
+      <section className="relative">
+        {/* Green banner */}
+        <div className="bg-green-500 py-6">
+          <div className="container mx-auto px-6">
+            <h2 className="text-3xl font-bold">Available Resources</h2>
+          </div>
+        </div>
+
+        {/* Resource cards */}
+        <div className="bg-white py-8">
+          <div className="container mx-auto px-6">
+            <div className="flex gap-4 overflow-x-auto pb-4 mb-6">
+              <div className="shrink-0 bg-white border-l-4 border-green-500 p-6 rounded shadow-sm min-w-[280px]">
+                <div className="flex items-center gap-3">
+                  <House className="w-5 h-5 text-gray-600" />
+                  <h3 className="text-lg font-semibold text-gray-900">
+                    Legal Aid Center
+                  </h3>
+                </div>
+              </div>
+              <div className="shrink-0 bg-white border-l-4 border-green-500 p-6 rounded shadow-sm min-w-[280px]">
+                <div className="flex items-center gap-3">
+                  <House className="w-5 h-5 text-gray-600" />
+                  <h3 className="text-lg font-semibold text-gray-900">
+                    Legal Aid Center
+                  </h3>
+                </div>
+              </div>
+              <div className="shrink-0 bg-white border-l-4 border-green-500 p-6 rounded shadow-sm min-w-[280px]">
+                <div className="flex items-center gap-3">
+                  <House className="w-5 h-5 text-gray-600" />
+                  <h3 className="text-lg font-semibold text-gray-900">
+                    Legal Aid Center
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            {/* Placeholder for filter buttons */}
+            <div>
+              {/* Will be added next */}
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );
