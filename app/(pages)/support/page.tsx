@@ -175,9 +175,32 @@ export default function SupportPage() {
               </div>
             </div>
 
-            {/* Placeholder for filter buttons */}
-            <div>
-              {/* Will be added next */}
+            {/* Filter buttons */}
+            <div className="flex flex-wrap gap-7">
+              <button className=" w-[155px] h-[70px]px-4 py-2 bg-[#E4F3EF] border border-white rounded text-white flex items-center gap-2 transition-colors">
+                <span className="font-normal text-black tracking-wide">All resources</span>
+                <ChevronDown className="w-4 h-4 text-black" />
+              </button>
+              <button className="px-4 py-2 bg-white border border-white rounded text-gray-900 flex items-center gap-2 hover:bg-gray-50 w-[199px] h-[70px] transition-colors">
+                <span className="font-normal text-black tracking-wide text-[15px]">Counselling</span>
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              <button className=" w-[199px] h-[70px] px-4 py-2 bg-white border border-white rounded text-gray-900 flex items-center gap-2 hover:bg-gray-50 transition-colors">
+                <span>Organisations</span>
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              <button className="w-[155px] h-[70px] px-4 py-2 bg-white border border-white rounded text-gray-900 flex items-center gap-2 hover:bg-gray-50 transition-colors">
+                <span>Legal aid</span>
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              <button className="w-[199px] h-[70px] px-4 py-2 bg-white border border-white rounded text-gray-900 flex items-center gap-2 hover:bg-gray-50 transition-colors">
+                <span>Support groups</span>
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              <button className="w-[276px] h-[70px] px-4 py-2 bg-white border border-white rounded text-gray-900 flex items-center gap-2 hover:bg-gray-50 transition-colors">
+                <span>Crisis support & help</span>
+                <ChevronDown className="w-4 h-4" />
+              </button>
             </div>
           </div>
         </div>
