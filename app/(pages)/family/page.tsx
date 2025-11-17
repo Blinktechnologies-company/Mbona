@@ -77,6 +77,10 @@ const family = () => {
           </div>
         </section>
       </div>
+      <main>
+        
+      </main>
+
     </div>
   );
 };

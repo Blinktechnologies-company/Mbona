@@ -35,7 +35,7 @@ export default function SupportPage() {
                   Adoption
                 </Link>
                 <Link
-                  href="/find-family"
+                  href="/family"
                   className="text-white hover:text-[#009367] transition-colors"
                 >
                   Find Family
