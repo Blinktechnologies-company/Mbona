@@ -10,7 +10,7 @@ export default function SiteHeader({ variant = "overlay" }: { variant?: "overlay
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="mx-auto max-w-6xl px-6 pt-4">
+    <div className="mx-auto max-w-6xl px-6 pt-4 relative z-10">
       <header
         className={`px-0 py-2 ${
           isOverlay ? "bg-transparent" : "rounded-xl border border-zinc-200 bg-white "
@@ -19,7 +19,7 @@ export default function SiteHeader({ variant = "overlay" }: { variant?: "overlay
         <div className="flex items-center justify-between">
           
           <div
-            className={`text-lg font-semibold ${
+            className={`text-lg font-bold ${
               isOverlay ? "text-white" : "text-emerald-800"
             }`}
           >
@@ -28,14 +28,14 @@ export default function SiteHeader({ variant = "overlay" }: { variant?: "overlay
 
           
           <nav
-            className={`hidden items-center justify-center gap-8 text-sm sm:flex ${
+            className={`hidden items-center justify-center gap-8 text-md sm:flex font-bold  ${
               isOverlay ? "text-white/90" : "text-zinc-700"
             }`}
           >
           
             <Link href="/" className="hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500">Home</Link>
             <Link href="/adoption" className="hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500">Adoption</Link>
-            <Link href="/find-family" className="hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500">Find Family</Link>
+            <Link href="/family" className="hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500">Find Family</Link>
             <Link href="/support" className="hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500">Support</Link>
             <Link href="/about" className="hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500">About</Link>
           </nav>
@@ -55,7 +55,7 @@ export default function SiteHeader({ variant = "overlay" }: { variant?: "overlay
 
         
           <button
-            className="sm:hidden text-white"
+            className="md:hidden text-white"
             onClick={() => setOpen(!open)}
           >
             {open ? <X size={28} /> : <Menu size={28} />}
@@ -65,7 +65,7 @@ export default function SiteHeader({ variant = "overlay" }: { variant?: "overlay
         
         {open && (
           <nav
-            className={`sm:hidden mt-4 flex flex-col gap-4 p-4 rounded-xl ${
+            className={`md:hidden mt-4 flex flex-col gap-4 p-4 rounded-xl ${
               isOverlay ? "bg-white/10 backdrop-blur text-white" : "bg-white text-zinc-700"
             }`}
           >

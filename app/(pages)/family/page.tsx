@@ -3,102 +3,48 @@ import { Book, ChevronDown, Search } from "lucide-react";
 import Card from "@/app/_components/card";
 import SurvivorCard from "@/app/_components/survivor-card";
 import SiteFooter from "@/app/_components/Footer";
+import SiteHeader from "@/components/site-header";
 const family = () => {
   return (
-    <div className="mx-auto">
-      <div className="bg-[#009367] w-[1780px] mx-auto rounded-tr-xl rounded-tl-xl text-[#009367]">
-        hello
-      </div>
-
-      <div className="w-[1780px] mx-auto ">
-        <div className="relative bg-[url('/mbona1.png')] h-[578px]">
+    <div className="mx-auto max-w-[1780px] overflow-x-hidden px-2 sm:px-4 md:px-6">
+      <div className="h-7 rounded-t-full bg-emerald-600" />
+      <div className="mx-auto w-full max-w-[1780px] overflow-x-hidden">
+        <div className="relative bg-[url('/mbona1.png')] bg-cover bg-center min-h-[400px] sm:min-h-[500px] md:h-[578px] mx-auto w-full overflow-x-hidden">
           <div className="absolute inset-0 bg-black/80"></div>
-          <header className="w-full relative z-10 ">
-            <div className="container mx-auto px-6 py-4">
-              <div className="flex items-center justify-between">
-                <Link
-                  href="/"
-                  className="text-2xl font-bold tracking-wide text-white"
-                >
-                  Mbona
-                </Link>
-
-                <nav className="flex items-center gap-8 font-bold tracking-wide">
-                  <Link
-                    href="/"
-                    className="text-white hover:text-[#009367] transition-colors"
-                  >
-                    Home
-                  </Link>
-                  <Link
-                    href="/adoption"
-                    className="text-white hover:text-[#009367] transition-colors"
-                  >
-                    Adoption
-                  </Link>
-                  <Link
-                    href="/find-family"
-                    className="text-white border-b-2 border-[#009367] pb-1"
-                  >
-                    Find Family
-                  </Link>
-                  <Link
-                    href="/support"
-                    className="text-white hover:text-[#009367] transition-colors"
-                  >
-                    Support
-                  </Link>
-                  <Link
-                    href="/about"
-                    className="text-white hover:text-[#009367] transition-colors"
-                  >
-                    About
-                  </Link>
-                </nav>
-
-                <Link
-                  href="/support"
-                  className="px-4 py-2 border border-white rounded hover:bg-white/10 transition-colors flex items-center gap-2"
-                >
-                  <span className="text-white font-bold">Find lost family</span>
-                  <span className="w-2 h-2 bg-white rounded-full"></span>
-                </Link>
-              </div>
-            </div>
-          </header>
-          <section className="relative z-10">
+          <SiteHeader />
+          <section className="relative z-10 px-4 sm:px-6 md:px-8">
             <div className="flex flex-col items-center justify-center">
-              <h2 className="text-center font-bold text-[60px] text-white mt-10">
+              <h2 className="text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[60px] text-white mt-6 sm:mt-8 md:mt-10 px-4">
                 Find Lost Family
               </h2>
-              <p className="font-medium text-white tracking-widest mx-auto w-[40%] text-center mt-5 font-poppins">
+              <p className="font-medium text-white tracking-widest mx-auto w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[40%] text-center mt-4 sm:mt-5 font-poppins text-sm sm:text-base px-4">
                 A safe space for everyone to share memories, search for lost
-                family members, and celebrate reunions. Whether you’re a
+                family members, and celebrate reunions. Whether you&apos;re a
                 genocide survivor or looking for any missing relative, every
                 memory matters, every connection counts.
               </p>
             </div>
 
-            <div className="bg-white w-[750px] relative z-10 h-[51px] flex items-center justify-center rounded-tr-full border-l-20 border-emerald-600 rounded-br-full p-5 mt-20 ml-15">
-              <p className="text-center font-semibold text-[#009367]">
+            <div className="bg-white w-full max-w-[90%] sm:max-w-[600px] md:max-w-[750px] relative z-10 min-h-[51px] flex items-center justify-center rounded-tr-full border-l-4 sm:border-l-8 md:border-l-20 border-emerald-600 rounded-br-full p-4 sm:p-5 mt-12 sm:mt-16 md:mt-20 mx-auto sm:ml-8 md:ml-15">
+              <p className="text-center font-semibold text-[#009367] text-xs sm:text-sm md:text-base px-2">
                 Everything is optional and private. You control what you share
                 and who can see it.
               </p>
             </div>
           </section>
         </div>
-        <main className="flex flex-col items-center justify-center">
-          <div className="mt-8 p-6 bg-white rounded-2xl">
+        <main className="flex flex-col items-center justify-center px-4 sm:px-6 md:px-8">
+          <div className="mt-6 sm:mt-8 w-full max-w-7xl p-4 sm:p-6 bg-white rounded-2xl">
             <div className="flex flex-col xl:flex-row gap-4 items-center">
-              <div className="flex items-center w-[601px] h-[70px] gap-3 px-4 py-3 rounded-xl border border-gray-200">
-                <Search className="w-5 h-5 text-gray-500" />
+              <div className="flex items-center w-full max-w-full sm:max-w-[500px] md:max-w-[601px] min-h-[60px] sm:h-[70px] gap-3 px-4 py-3 rounded-xl border border-gray-200">
+                <Search className="w-5 h-5 text-gray-500 flex-shrink-0" />
                 <input
                   type="text"
                   placeholder="Search by name, location, or memories"
-                  className="w-full text-gray-900 placeholder:text-gray-500 focus:outline-none"
+                  className="w-full text-gray-900 placeholder:text-gray-500 focus:outline-none text-sm sm:text-base"
                 />
               </div>
-              <div className="flex flex-wrap gap-8 justify-center text-center">
+              <div className="flex flex-wrap gap-3 sm:gap-4 md:gap-8 justify-center text-center w-full xl:w-auto">
                 {[
                   "All posts",
                   "Seeking family",
@@ -107,70 +53,73 @@ const family = () => {
                 ].map((label) => (
                   <button
                     key={label}
-                    className={`px-6 py-3 w-[205px] h-[70px] rounded-xl border text-sm font-medium flex items-center gap-2 ${
+                    className={`px-4 sm:px-6 py-2 sm:py-3 w-full sm:w-[180px] md:w-[205px] min-h-[60px] sm:h-[70px] rounded-xl border text-xs sm:text-sm font-medium flex items-center justify-center gap-2 ${
                       label === "All posts"
                         ? "bg-[#E4F3EF] text-black border-[#009367]/30"
                         : "bg-white text-gray-600 border-gray-200"
                     }`}
                   >
                     {label}
-                    <ChevronDown className="w-4 h-4" />
+                    <ChevronDown className="w-4 h-4 flex-shrink-0" />
                   </button>
                 ))}
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center mt-10">
-            <Book className="text-white" />
+          <div className="flex items-center justify-center mt-6 sm:mt-8 md:mt-10 w-full">
             <Link
               href={"/"}
-              className="bg-[#009367] text-white px-10 py-3 rounded-md font-semibold flex gap-2"
+              className="bg-[#009367] text-white px-6 sm:px-8 md:px-10 py-2 sm:py-3 rounded-md font-semibold flex gap-2 items-center text-sm sm:text-base"
             >
-              <Book className="text-white" />
+              <Book className="text-white w-4 h-4 sm:w-5 sm:h-5" />
               Share Memory
             </Link>
           </div>
         </main>
       </div>
-      <section className="bg-[#F9FAFB] h-[1900px] flex flex-col mt-30">
-        <div className="text-center mt-10">
-          <h2 className="font-semibold text-[25px]">Memory Wall</h2>
-          <span className="font-medium">6 Memories found</span>
+      <section className="bg-[#F9FAFB] min-h-auto flex flex-col mt-12 sm:mt-16 md:mt-20 lg:mt-30 pb-10 sm:pb-16 md:pb-20">
+        <div className="text-center mt-6 sm:mt-8 md:mt-10 px-4">
+          <h2 className="font-semibold text-xl sm:text-2xl md:text-[25px]">
+            Memory Wall
+          </h2>
+          <span className="font-medium text-sm sm:text-base">
+            6 Memories found
+          </span>
         </div>
-        <div>
+        <div className="flex flex-col items-center gap-6 sm:gap-8 md:gap-10 mt-6 sm:mt-8 md:mt-10 px-4 sm:px-6 md:px-8">
           <Card />
           <Card />
           <Card />
         </div>
       </section>
 
-      <main className="bg-white min-h-screen mt-20">
-        <div className="text-center mt-10 w-[33%] mx-auto">
-          <h2 className="font-semibold text-[25px] mb-5">
+      <main className="bg-white min-h-screen mt-12 sm:mt-16 md:mt-20 px-4 sm:px-6 md:px-8">
+        <div className="text-center mt-6 sm:mt-8 md:mt-10 w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[33%] mx-auto">
+          <h2 className="font-semibold text-xl sm:text-2xl md:text-[25px] mb-4 sm:mb-5">
             Everyone is welcome
           </h2>
-          <span className="font-medium text-[#000000CC]">
+          <span className="font-medium text-sm sm:text-base text-[#000000CC]">
             Our platform is open to everyone looking for lost family members,
-            regardless of the circumstances. Whether you’re a genocide survivor,
-            looking for a missing relative, or searching for someone you lost
-            contact with, we’re here to help you reconnect.
+            regardless of the circumstances. Whether you&apos;re a genocide
+            survivor, looking for a missing relative, or searching for someone
+            you lost contact with, we&apos;re here to help you reconnect.
           </span>
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8 mt-8 sm:mt-10 md:mt-12">
           <SurvivorCard />
           <SurvivorCard />
           <SurvivorCard />
         </div>
-        <hr className="border-[#00E9D4] mt-30" />
-        <div className="text-center mt-20">
-          <h2 className="font-semibold text-[25px] mb-3">
+        <hr className="border-[#00E9D4] mt-12 sm:mt-16 md:mt-20 lg:mt-30" />
+        <div className="text-center mt-12 sm:mt-16 md:mt-20">
+          <h2 className="font-semibold text-xl sm:text-2xl md:text-[25px] mb-3">
             Support and Resources
           </h2>
-          <span className="font-medium text-[14px] text-[#000000CC]">
-            We understand this journey can be emotional. We’re here to support
-            you.
+          <span className="font-medium text-xs sm:text-sm md:text-[14px] text-[#000000CC] px-4">
+            We understand this journey can be emotional. We&apos;re here to
+            support you.
           </span>
-          <div className="flex items-center justify-center">
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8 mt-8 sm:mt-10 md:mt-12">
             <SurvivorCard />
             <SurvivorCard />
             <SurvivorCard />
@@ -178,7 +127,7 @@ const family = () => {
           </div>
         </div>
       </main>
-      <div className="mt-60">
+      <div className="mt-20 sm:mt-30 md:mt-40 lg:mt-60">
         <SiteFooter />
       </div>
     </div>

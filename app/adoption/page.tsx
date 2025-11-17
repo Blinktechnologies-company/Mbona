@@ -86,7 +86,7 @@ export default function AdoptionPage() {
                 <div className="mb-4 h-40 w-full overflow-hidden rounded-lg bg-zinc-200 bg-[url('/adoptChildren.png')] bg-cover"></div>
 
                 <div className="text-lg font-bold text-zinc-900 pb-4">
-                  Kaneza
+                  Mukiza
                 </div>
                 <div className="text-sm text-emerald-700 pb-4 ">
                   6 years • Kigali
