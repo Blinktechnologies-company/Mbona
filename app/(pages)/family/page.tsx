@@ -1,7 +1,9 @@
 import Link from "next/link";
+import { Book, ChevronDown, Search } from "lucide-react";
 const family = () => {
   return (
-    <div className="w-[1800px] mx-auto">
+    <div className="mx-auto">
+    <div className="w-[1800px] ">
       <div className="relative bg-[url('/mbona1.png')] h-[578px]">
         <div className="absolute inset-0 bg-black/80"></div>
         <header className="w-full relative z-10 ">
@@ -77,10 +79,52 @@ const family = () => {
           </div>
         </section>
       </div>
-      <main>
-        
+      <main className="flex flex-col items-center justify-center">
+      <div className="mt-8 p-6 bg-white rounded-2xl">
+              <div className="flex flex-col xl:flex-row gap-4 items-center">
+                <div className="flex items-center w-[601px] h-[70px] gap-3 px-4 py-3 rounded-xl border border-gray-200">
+                  <Search className="w-5 h-5 text-gray-500" />
+                  <input
+                    type="text"
+                    placeholder="Search by name, location, or memories"
+                    className="w-full text-gray-900 placeholder:text-gray-500 focus:outline-none"
+                  />
+                </div>
+                <div className="flex flex-wrap gap-8 justify-center text-center">
+                  {[
+                    "All posts",
+                    "Seeking family",
+                    "Reunited stories",
+                    "All missing",
+                  ].map((label) => (
+                    <button
+                      key={label}
+                      className={`px-6 py-3 w-[205px] h-[70px] rounded-xl border text-sm font-medium flex items-center gap-2 ${
+                        label === "All posts"
+                          ? "bg-[#E4F3EF] text-black border-[#009367]/30"
+                          : "bg-white text-gray-600 border-gray-200"
+                      }`}
+                    >
+                      {label}
+                      <ChevronDown className="w-4 h-4" />
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+                  <div className="flex items-center justify-center">
+                    <Book className="text-white" />
+                    <Link href={"/"} className="bg-[#009367] text-white px-10 py-3 rounded-md font-semibold flex gap-2"><Book className="text-white" />Share Memory</Link>
+                  </div>
       </main>
 
+      
+
+    </div>
+    {/* <section>
+
+      </section> */}
+      
     </div>
   );
 };
