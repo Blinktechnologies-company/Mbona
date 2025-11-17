@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Book, ChevronDown, Search } from "lucide-react";
+// import Footer from "@/app/_components/Footer";
 import Card from "@/app/_components/card";
 import SurvivorCard from "@/app/_components/survivor-card";
 const family = () => {
@@ -142,7 +143,9 @@ const family = () => {
 
       <main className="bg-white min-h-screen mt-20">
         <div className="text-center mt-10 w-[33%] mx-auto">
-          <h2 className="font-semibold text-[25px] mb-5">Everyone is welcome</h2>
+          <h2 className="font-semibold text-[25px] mb-5">
+            Everyone is welcome
+          </h2>
           <span className="font-medium text-[#000000CC]">
             Our platform is open to everyone looking for lost family members,
             regardless of the circumstances. Whether you’re a genocide survivor,
@@ -151,11 +154,26 @@ const family = () => {
           </span>
         </div>
         <div className="flex items-center justify-center">
-        <SurvivorCard />
-        <SurvivorCard />
-        <SurvivorCard />
+          <SurvivorCard />
+          <SurvivorCard />
+          <SurvivorCard />
+        </div>
+        <hr className="border-[#00E9D4] mt-30" />
+        <div className="text-center mt-20">
+          <h2 className="font-semibold text-[25px] mb-3">Support and Resources</h2>
+          <span className="font-medium text-[14px] text-[#000000CC]">
+            We understand this journey can be emotional. We’re here to support
+            you.
+          </span>
+          <div className="flex items-center justify-center">
+          <SurvivorCard />
+          <SurvivorCard />
+          <SurvivorCard />
+          <SurvivorCard />
+        </div>
         </div>
       </main>
+      {/* <Footer /> */}
     </div>
   );
 };
