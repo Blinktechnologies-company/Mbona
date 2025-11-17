@@ -1,7 +1,7 @@
 import Link from "next/link";
 const family = () => {
   return (
-    <div>
+    <div className="w-[1800px] mx-auto">
       <div className="relative bg-[url('/mbona1.png')] h-[578px]">
         <div className="absolute inset-0 bg-black/80"></div>
         <header className="w-full relative z-10 ">
@@ -57,7 +57,7 @@ const family = () => {
             </div>
           </div>
         </header>
-        <section className="flex flex-col items-center justify-center relative z-10">
+        <section className="relative z-10">
           <div className="flex flex-col items-center justify-center">
             <h2 className="text-center font-bold text-[60px] text-white mt-10">
               Find Lost Family
@@ -69,8 +69,11 @@ const family = () => {
               matters, every connection counts.
             </p>
           </div>
-          <div className="bg-white w-[598px] relative z-10 h-[51px] flex items-center justify-center rounded-tr-md rounded-br-md ">
-    <p className="text-center">Everything is optional and private. You control what you share and who can see it.</p>
+          
+          <div className="bg-white w-[650px] relative z-10 h-[51px] flex items-center justify-center rounded-tr-full rounded-br-full p-5 mt-20 ml-15  ">
+            <div className="bg-[#009367] h-[51px] w-[10px]"></div>
+    <p className="text-center font-semibold text-[#009367]">Everything is optional and private. You control what you share and who can see it.</p>
+          
           </div>
         </section>
       </div>
