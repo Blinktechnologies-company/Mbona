@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Book, ChevronDown, Search } from "lucide-react";
 import Card from "@/app/_components/card";
+import SurvivorCard from "@/app/_components/survivor-card";
 const family = () => {
   return (
     <div className="mx-auto">
@@ -149,6 +150,7 @@ const family = () => {
             contact with, we’re here to help you reconnect.
           </span>
         </div>
+        <SurvivorCard />
       </main>
     </div>
   );
