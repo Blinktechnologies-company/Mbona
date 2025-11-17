@@ -9,7 +9,7 @@ const family = () => {
       <div className="bg-[#009367] w-[1780px] mx-auto rounded-tr-xl rounded-tl-xl text-[#009367]">
         hello
       </div>
-  
+
       <div className="w-[1780px] mx-auto ">
         <div className="relative bg-[url('/mbona1.png')] h-[578px]">
           <div className="absolute inset-0 bg-black/80"></div>
@@ -163,21 +163,23 @@ const family = () => {
         </div>
         <hr className="border-[#00E9D4] mt-30" />
         <div className="text-center mt-20">
-          <h2 className="font-semibold text-[25px] mb-3">Support and Resources</h2>
+          <h2 className="font-semibold text-[25px] mb-3">
+            Support and Resources
+          </h2>
           <span className="font-medium text-[14px] text-[#000000CC]">
             We understand this journey can be emotional. We’re here to support
             you.
           </span>
           <div className="flex items-center justify-center">
-          <SurvivorCard />
-          <SurvivorCard />
-          <SurvivorCard />
-          <SurvivorCard />
-        </div>
+            <SurvivorCard />
+            <SurvivorCard />
+            <SurvivorCard />
+            <SurvivorCard />
+          </div>
         </div>
       </main>
       <div className="mt-60">
-      <SiteFooter />
+        <SiteFooter />
       </div>
     </div>
   );

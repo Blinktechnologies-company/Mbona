@@ -254,7 +254,8 @@ export default function SupportPage() {
 
       <section className="mt-20 bg-[#E4F3EF4D]">
         <div className="text-center">
-          <h1 className="pt-20 font-semibold text-[25px]">Emergency support</h1><br></br>
+          <h1 className="pt-20 font-semibold text-[25px]">Emergency support</h1>
+          <br></br>
           <p className="text-[#000000CC]">
             If you're in crisis or need immediate support, these resources are
             available 24/7
@@ -269,7 +270,10 @@ export default function SupportPage() {
 
       <main className="bg-[#F9FAFB] flex flex-col items-center justify-center pt-20">
         <div className="text-center">
-          <h1 className="pt-20 font-semibold text-[25px]">Self-Care Resources</h1><br></br>
+          <h1 className="pt-20 font-semibold text-[25px]">
+            Self-Care Resources
+          </h1>
+          <br></br>
           <p className="text-[#000000CC]">
             If you're in crisis or need immediate support, these resources are
             available 24/7
@@ -279,17 +283,22 @@ export default function SupportPage() {
           <SurvivorCard />
           <SurvivorCard />
           <SurvivorCard />
-        </div><br></br><br></br><br></br><br></br>
+        </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <div className="text-center">
-          <h1 className="font-semibold text-[25px]">How to get help</h1><br></br>
+          <h1 className="font-semibold text-[25px]">How to get help</h1>
+          <br></br>
           <p className="font-medium">
             Taking the first step to get support can be difficult. Here’s how we
             can help.
           </p>
           <div className="flex gap-10">
-          <Reach />
-          <Reach />
-          <Reach />
+            <Reach />
+            <Reach />
+            <Reach />
           </div>
         </div>
       </main>
@@ -315,7 +324,10 @@ export default function SupportPage() {
             asChild
             className={`border-white/90 text-white bg-[#009367] hover:text-white rounded px-4 py-5 mt-5`}
           >
-            <Link href={"/"}><MailSearch className=""/>Email Support</Link>
+            <Link href={"/"}>
+              <MailSearch className="" />
+              Email Support
+            </Link>
           </Button>
         </div>
       </section>

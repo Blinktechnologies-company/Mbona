@@ -9,7 +9,9 @@ const Card = () => {
           <div className="flex gap-5 mb-10">
             <span className="text-[#009367]">8 years old in Kigali</span>
             <span className="text-[#009367]">Kigali</span>
-            <span className="bg-[#00936747] px-8 rounded-full text-[#009367]">Genocide Survivor</span>
+            <span className="bg-[#00936747] px-8 rounded-full text-[#009367]">
+              Genocide Survivor
+            </span>
           </div>
           <p className="text-[#000000CC] mb-10">
             Looking for my sister Maria who was 8 years old in 1994. We were
@@ -22,7 +24,14 @@ const Card = () => {
             <li className="mb-8">Our father was a teacher</li>
           </ol>
           <hr />
-          <Link className="flex items-center justify-center mt-10 bg-[#009367] w-[251px] h-[51px] px-4 py-3 rounded-lg gap-3 text-white" href={"/"}> Contact Amandine<Phone className="text-white w-[24px] h-[24px]" /></Link>
+          <Link
+            className="flex items-center justify-center mt-10 bg-[#009367] w-[251px] h-[51px] px-4 py-3 rounded-lg gap-3 text-white"
+            href={"/"}
+          >
+            {" "}
+            Contact Amandine
+            <Phone className="text-white w-[24px] h-[24px]" />
+          </Link>
         </div>
       </div>
     </div>
