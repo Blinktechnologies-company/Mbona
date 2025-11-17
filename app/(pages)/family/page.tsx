@@ -10,7 +10,7 @@ const family = () => {
         hello
       </div>
   
-      <div className="w-[1780px] mx-auto mt- ">
+      <div className="w-[1780px] mx-auto ">
         <div className="relative bg-[url('/mbona1.png')] h-[578px]">
           <div className="absolute inset-0 bg-black/80"></div>
           <header className="w-full relative z-10 ">

@@ -6,6 +6,8 @@ import Foundation from "@/app/_components/foundation";
 import SurvivorCard from "@/app/_components/survivor-card";
 import { Button } from "@/components/ui/button";
 import Reach from "@/app/_components/Reach";
+import { MailSearch } from "lucide-react";
+import SiteFooter from "@/app/_components/Footer";
 export default function SupportPage() {
   return (
     <>
@@ -265,7 +267,7 @@ export default function SupportPage() {
         </div>
       </section>
 
-      <main className="bg-[#F9FAFB] flex flex-col items-center justify-center pt-30">
+      <main className="bg-[#F9FAFB] flex flex-col items-center justify-center pt-20">
         <div className="text-center">
           <h1 className="pt-20 font-semibold text-[25px]">Self-Care Resources</h1><br></br>
           <p className="text-[#000000CC]">
@@ -292,7 +294,7 @@ export default function SupportPage() {
         </div>
       </main>
 
-      <section className="mt-20 bg-[#009367] flex flex-col items-center justify-center text-white">
+      <section className="mt-20 bg-[#009367] flex flex-col items-center justify-center text-white h-[361px]">
         <h1 className="font-bold pt-10 text-4xl">
           <i>You are not alone anymore</i>
         </h1>
@@ -311,12 +313,13 @@ export default function SupportPage() {
           </Button>
           <Button
             asChild
-            className={`border-white/90 text-[#009367] bg-white hover:text-white rounded px-4 py-5 mt-5`}
+            className={`border-white/90 text-white bg-[#009367] hover:text-white rounded px-4 py-5 mt-5`}
           >
-            <Link href={"/"}>Call crisis line</Link>
+            <Link href={"/"}><MailSearch className=""/>Email Support</Link>
           </Button>
         </div>
       </section>
+      <SiteFooter />
     </>
   );
 }
