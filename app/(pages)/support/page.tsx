@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card";
 import Foundation from "@/app/_components/foundation";
 import SurvivorCard from "@/app/_components/survivor-card";
 import { Button } from "@/components/ui/button";
+import Reach from "@/app/_components/Reach";
 export default function SupportPage() {
   return (
     <>
@@ -283,6 +284,11 @@ export default function SupportPage() {
             Taking the first step to get support can be difficult. Here’s how we
             can help.
           </p>
+          <div className="flex gap-10">
+          <Reach />
+          <Reach />
+          <Reach />
+          </div>
         </div>
       </main>
 
