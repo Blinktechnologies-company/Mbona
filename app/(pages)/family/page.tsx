@@ -57,7 +57,7 @@ const family = () => {
             </div>
           </div>
         </header>
-        {/* <section className="flex flex-col items-center justify-center relative z-10">
+        <section className="flex flex-col items-center justify-center relative z-10">
           <div className="flex flex-col items-center justify-center">
             <h2 className="text-center font-bold text-[60px] text-white mt-10">
               Find Lost Family
@@ -72,7 +72,7 @@ const family = () => {
           <div className="bg-white w-[598px] relative z-10 h-[51px] flex items-center justify-center rounded-tr-md rounded-br-md ">
     <p className="text-center">Everything is optional and private. You control what you share and who can see it.</p>
           </div>
-        </section> */}
+        </section>
       </div>
     </div>
   );
