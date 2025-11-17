@@ -239,8 +239,8 @@ export default function SupportPage() {
       </div>
       <main className="bg-white text-black mt-20">
         <div className="text-center mb-10">
-          <h1>Available Resources</h1>
-          <p>6 resources found</p>
+          <h1 className="font-semibold text-[25px]">Available Resources</h1>
+          <p className="font-medium text-[#000000CC]">6 resources found</p>
         </div>
         <div className="flex items-center justify-center">
           <Foundation />
