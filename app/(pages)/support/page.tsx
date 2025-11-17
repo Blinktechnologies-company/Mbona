@@ -251,8 +251,8 @@ export default function SupportPage() {
 
       <section className="mt-20 bg-[#E4F3EF4D]">
         <div className="text-center">
-          <h1 className="mt-10">Emergency support</h1>
-          <p>
+          <h1 className="pt-20 font-semibold text-[25px]">Emergency support</h1><br></br>
+          <p className="text-[#000000CC]">
             If you're in crisis or need immediate support, these resources are
             available 24/7
           </p>
@@ -264,10 +264,10 @@ export default function SupportPage() {
         </div>
       </section>
 
-      <main className="bg-[#F9FAFB] flex flex-col items-center justify-center mt-30">
+      <main className="bg-[#F9FAFB] flex flex-col items-center justify-center pt-30">
         <div className="text-center">
-          <h1 className="mt-10">Emergency support</h1>
-          <p>
+          <h1 className="pt-20 font-semibold text-[25px]">Self-Care Resources</h1><br></br>
+          <p className="text-[#000000CC]">
             If you're in crisis or need immediate support, these resources are
             available 24/7
           </p>
@@ -276,10 +276,10 @@ export default function SupportPage() {
           <SurvivorCard />
           <SurvivorCard />
           <SurvivorCard />
-        </div>
+        </div><br></br><br></br><br></br><br></br>
         <div className="text-center">
-          <h1>How to get help</h1>
-          <p>
+          <h1 className="font-semibold text-[25px]">How to get help</h1><br></br>
+          <p className="font-medium">
             Taking the first step to get support can be difficult. Here’s how we
             can help.
           </p>
