@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Book, ChevronDown, Search } from "lucide-react";
+import Card from "@/app/_components/card";
 const family = () => {
   return (
     <div className="mx-auto">
@@ -121,9 +122,16 @@ const family = () => {
       
 
     </div>
-    {/* <section>
+    <section className="bg-[#F9FAFB] min-h-screen flex flex-col mt-30">
+      <div className="text-center mt-10">
+        <h2 className="font-semibold text-[25px]" >Memory Wall</h2>
+        <span className="font-medium">6 Memories found</span>
+      </div>
+      <div>
+        <Card />
+      </div>
 
-      </section> */}
+      </section>
       
     </div>
   );
