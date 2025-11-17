@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Home, ChevronDown, House } from "lucide-react";
-
+import { Card } from "@/components/ui/card";
+import Foundation from "@/app/_components/foundation";
 export default function SupportPage() {
   return (
     <>
@@ -231,7 +232,27 @@ export default function SupportPage() {
             </div>
           </div>
         </section>
+       
       </div>
+       <main className="bg-white text-black mt-20">
+          <div className="text-center mb-10">
+            <h1>Available Resources</h1>
+            <p>6 resources found</p>
+          </div>
+          <div className="flex items-center justify-center">
+                <Foundation />
+                <Foundation />
+                <Foundation />
+          </div>
+        </main>
+
+        <section className="mt-20 bg-[#E4F3EF4D]">
+          <div className="text-center">
+            <h1 className="mt-10">Emergency support</h1>
+            <p>If you're in crisis or need immediate support, these resources are available 24/7</p>
+          </div>
+
+        </section>
     </>
   );
 }
