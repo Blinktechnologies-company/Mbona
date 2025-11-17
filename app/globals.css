@@ -2,6 +2,11 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+@theme {
+  --font-poppins: var(--font-poppins);
+
+  --font-family-poppins: var(--font-poppins), sans-serif;
+}
 
 @theme inline {
   --default-font-family: var(--font-poppins);
@@ -45,6 +50,10 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+body {
+  font-family: var(--font-poppins), sans-serif;
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -80,6 +89,18 @@
   --sidebar-ring: oklch(0.704 0.04 256.788);
 }
 
+.group-37 {
+  @apply absolute w-[122px] h-[165.34px] left-[229px] top-[366px] rotate-[58.09deg];
+}
+.primary {
+  @apply bg-[#009367];
+}
+.text-primary {
+  @apply text-[#009367];
+}
+.background-primary {
+  @apply bg-[#0D0C11];
+}
 .dark {
   --background: oklch(0.129 0.042 264.695);
   --foreground: oklch(0.984 0.003 247.858);
