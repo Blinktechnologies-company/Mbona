@@ -6,10 +6,11 @@ import SiteFooter from "@/app/_components/Footer";
 const family = () => {
   return (
     <div className="mx-auto">
-      <div className="bg-[#009367] ml-[13px] h-[33px] w-[1414px] absolute">
-hello
-</div>
-      <div className="w-[1780px] mx-auto ">
+      <div className="bg-[#009367] w-[1780px] mx-auto rounded-tr-xl rounded-tl-xl text-[#009367]">
+        hello
+      </div>
+  
+      <div className="w-[1780px] mx-auto mt- ">
         <div className="relative bg-[url('/mbona1.png')] h-[578px]">
           <div className="absolute inset-0 bg-black/80"></div>
           <header className="w-full relative z-10 ">
@@ -119,7 +120,7 @@ hello
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center mt-10">
             <Book className="text-white" />
             <Link
               href={"/"}

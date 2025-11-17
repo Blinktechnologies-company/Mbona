@@ -3,14 +3,18 @@ import Link from "next/link";
 import { Home, ChevronDown, House } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Foundation from "@/app/_components/foundation";
+import SurvivorCard from "@/app/_components/survivor-card";
+import { Button } from "@/components/ui/button";
 export default function SupportPage() {
   return (
     <>
-      <div className="h-[33px] w-[1765px] mx-auto bg-[#009367] rounded-t-xl relative z-50 "></div>
-      <div className="min-h-screen bg-black text-white rounded-md dark overflow-x-hidden w-[1770px] mx-auto">
+      <div className="bg-[#009367] w-[1780px] mx-auto rounded-tr-xl rounded-tl-xl text-[#009367]">
+        hello
+      </div>
+      <div className="min-h-screen bg-black text-white rounded-md dark overflow-x-hidden w-[1780px] mx-auto">
         {/* Header */}
 
-        <header className="w-full  bg-[url('/my-image.png')]">
+        <header className="w-full  background-primary">
           <div className="container mx-auto px-6 py-4">
             <div className="flex items-center justify-between">
               {/* Logo */}
@@ -143,7 +147,7 @@ export default function SupportPage() {
           </div>
           <div className="absolute bottom-0 left-0 right-0 flex">
             <svg
-            className=" z-0"
+              className=" z-0"
               width="456"
               height="66"
               viewBox="0 0 456 66"
@@ -154,14 +158,14 @@ export default function SupportPage() {
             </svg>
 
             <div className="absolute inset-0 flex items-center px-6 z-10">
-              <h2 className="text-3xl font-normal leading-tight tracking-widest text-white">Available Resources</h2>
+              <h2 className="text-3xl font-normal leading-tight tracking-widest text-white">
+                Available Resources
+              </h2>
             </div>
-
-
-          </div><div className="bg-[#94D2BF] w-full]">
-              <p>Legal Aid Center</p>
-            </div>
-
+          </div>
+          <div className="bg-[#94D2BF] w-full]">
+            <p>Legal Aid Center</p>
+          </div>
         </main>
 
         {/* Available Resources Section */}
@@ -232,27 +236,81 @@ export default function SupportPage() {
             </div>
           </div>
         </section>
-       
       </div>
-       <main className="bg-white text-black mt-20">
-          <div className="text-center mb-10">
-            <h1>Available Resources</h1>
-            <p>6 resources found</p>
-          </div>
-          <div className="flex items-center justify-center">
-                <Foundation />
-                <Foundation />
-                <Foundation />
-          </div>
-        </main>
+      <main className="bg-white text-black mt-20">
+        <div className="text-center mb-10">
+          <h1>Available Resources</h1>
+          <p>6 resources found</p>
+        </div>
+        <div className="flex items-center justify-center">
+          <Foundation />
+          <Foundation />
+          <Foundation />
+        </div>
+      </main>
 
-        <section className="mt-20 bg-[#E4F3EF4D]">
-          <div className="text-center">
-            <h1 className="mt-10">Emergency support</h1>
-            <p>If you're in crisis or need immediate support, these resources are available 24/7</p>
-          </div>
+      <section className="mt-20 bg-[#E4F3EF4D]">
+        <div className="text-center">
+          <h1 className="mt-10">Emergency support</h1>
+          <p>
+            If you're in crisis or need immediate support, these resources are
+            available 24/7
+          </p>
+        </div>
+        <div className="flex items-center justify-center">
+          <SurvivorCard />
+          <SurvivorCard />
+          <SurvivorCard />
+        </div>
+      </section>
 
-        </section>
+      <main className="bg-[#F9FAFB] flex flex-col items-center justify-center mt-30">
+        <div className="text-center">
+          <h1 className="mt-10">Emergency support</h1>
+          <p>
+            If you're in crisis or need immediate support, these resources are
+            available 24/7
+          </p>
+        </div>
+        <div className="flex items-center justify-center">
+          <SurvivorCard />
+          <SurvivorCard />
+          <SurvivorCard />
+        </div>
+        <div className="text-center">
+          <h1>How to get help</h1>
+          <p>
+            Taking the first step to get support can be difficult. Here’s how we
+            can help.
+          </p>
+        </div>
+      </main>
+
+      <section className="mt-20 bg-[#009367] flex flex-col items-center justify-center text-white">
+        <h1 className="font-bold pt-10 text-4xl">
+          <i>You are not alone anymore</i>
+        </h1>
+        <br></br>
+        <span className="text-[#FFFFFFCC] text-center">
+          Whether you need immediate support or ongoing care, we’re here
+          <br></br> to help you through this journey.
+        </span>
+        <br></br>
+        <div className="flex gap-10">
+          <Button
+            asChild
+            className={`border-white/90 text-[#009367] bg-white hover:text-white rounded px-4 py-5 mt-5`}
+          >
+            <Link href={"/"}>Call crisis line</Link>
+          </Button>
+          <Button
+            asChild
+            className={`border-white/90 text-[#009367] bg-white hover:text-white rounded px-4 py-5 mt-5`}
+          >
+            <Link href={"/"}>Call crisis line</Link>
+          </Button>
+        </div>
+      </section>
     </>
   );
 }
