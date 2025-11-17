@@ -150,7 +150,11 @@ const family = () => {
             contact with, we’re here to help you reconnect.
           </span>
         </div>
+        <div className="flex items-center justify-center">
         <SurvivorCard />
+        <SurvivorCard />
+        <SurvivorCard />
+        </div>
       </main>
     </div>
   );
