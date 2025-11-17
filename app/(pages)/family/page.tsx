@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { Book, ChevronDown, Search } from "lucide-react";
-// import Footer from "@/app/_components/Footer";
 import Card from "@/app/_components/card";
 import SurvivorCard from "@/app/_components/survivor-card";
+import SiteFooter from "@/app/_components/Footer";
 const family = () => {
   return (
     <div className="mx-auto">
@@ -173,7 +173,9 @@ const family = () => {
         </div>
         </div>
       </main>
-      {/* <Footer /> */}
+      <div className="mt-60">
+      <SiteFooter />
+      </div>
     </div>
   );
 };
