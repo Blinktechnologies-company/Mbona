@@ -7,7 +7,7 @@ import { Progress } from "@/components/ui/progress";
 
 export default function HomeHero() {
   return (
-    <div className="mx-[10px]">
+    <div className="mx-[16px]">
      <div className="h-7 rounded-t-full bg-emerald-600" />
     
     <section className="relative isolate bg-black text-white min-h-[420px] sm:min-h-[520px]">
