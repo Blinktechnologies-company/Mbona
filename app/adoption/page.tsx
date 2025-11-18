@@ -14,6 +14,8 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 export default function AdoptionPage() {
+   const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-60px" });
   return (
     <div className="space-y-0">
       <main className="space-y-14">
@@ -150,8 +152,7 @@ export default function AdoptionPage() {
 
           <div className="mt-8 grid gap-8 sm:grid-cols-4">
             {supportCards.map((c, i) => {
-              const ref = useRef(null);
-              const isInView = useInView(ref, { once: true, margin: "-60px" });
+             
 
               return (
                 <motion.div
