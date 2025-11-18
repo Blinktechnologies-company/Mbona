@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import Reach from "@/app/_components/Reach";
 import SiteFooter from "@/app/_components/Footer";
 import SiteHeader from "@/components/site-header";
+import Emergency from "@/app/_components/Emergency";
 
 export default function SupportPage() {
   return (
@@ -123,9 +124,9 @@ export default function SupportPage() {
           </p>
         </div>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-6">
-          <SurvivorCard />
-          <SurvivorCard />
-          <SurvivorCard />
+          <Emergency />
+          <Emergency />
+          <Emergency />
         </div>
       </section>
 
