@@ -12,7 +12,7 @@ import Emergency from "@/app/_components/Emergency";
 
 export default function SupportPage() {
   return (
-    <div className="mx-2 sm:mx-10 overflow-x-hidden">
+    <div className="mx-2 sm:mx-4 overflow-x-hidden">
       <div className="h-7 rounded-t-full bg-emerald-600" />
 
       {/* Header */}
@@ -21,7 +21,7 @@ export default function SupportPage() {
       </div>
 
       {/* Hero Section */}
-      <main className="relative max-h-[750px] background-primary">
+      <main className="relative max-h-[550px] background-primary">
         {/* Decorative dots - hide on small screens */}
         <div className="hidden md:block absolute top-20 left-10 w-2 h-2 bg-green-400 rounded-full"></div>
         <div className="hidden md:block absolute top-40 left-32 w-2 h-2 bg-yellow-400 rounded-full"></div>
@@ -34,24 +34,24 @@ export default function SupportPage() {
         <div className="container mx-auto px-4 sm:px-6 py-16 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[600px]">
             {/* Text content */}
-            <div className="space-y-6">
+            <div className="mb-50 ml-30">
               <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-tight tracking-widest text-white">
                 Support <br /> Resources
               </h1>
               <p className="text-base sm:text-lg text-white/90 max-w-lg leading-relaxed tracking-widest font-medium">
                 Access professional counselling, legal aid, support groups, and community resources. You
-                don't have to go through this journey alone.
+                don&apos;t have to go through this journey alone.
               </p>
             </div>
 
             {/* Hero image */}
-            <div className="relative">
+            <div className="relative bottom-23 ml-20">
               <Image
                 src="/child.png"
                 alt="Children"
-                width={600}
-                height={600}
-                className="object-contain max-h-[600px] lg:block hidden"
+                width={400}
+                height={400}
+                className="object-contain max-h-[600px] lg:block hidden "
               />
               {/* Decorative shapes - hide on small screens */}
               <div className="hidden md:block absolute top-10 left-10 w-32 h-32 bg-green-400/40 rounded-full blur-2xl"></div>
@@ -120,7 +120,7 @@ export default function SupportPage() {
         <div className="text-center">
           <h1 className="font-semibold text-2xl sm:text-[25px]">Emergency support</h1>
           <p className="text-[#000000CC] mt-2">
-            If you're in crisis or need immediate support, these resources are available 24/7
+            If you&apos;re in crisis or need immediate support, these resources are available 24/7
           </p>
         </div>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-6">
@@ -135,7 +135,7 @@ export default function SupportPage() {
         <div className="text-center">
           <h1 className="font-semibold text-2xl sm:text-[25px]">Self-Care Resources</h1>
           <p className="text-[#000000CC] mt-2">
-            If you're in crisis or need immediate support, these resources are available 24/7
+            If you&apos;re in crisis or need immediate support, these resources are available 24/7
           </p>
         </div>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-6">
@@ -158,20 +158,21 @@ export default function SupportPage() {
 
       {/* Call to action */}
       <section className="mt-20 bg-[#009367] flex flex-col items-center justify-center text-white py-16 px-4 text-center">
-        <h1 className="font-bold text-3xl sm:text-4xl">
+        <h1 className="font-semibold text-2xl sm:text-4xl">
           <i>You are not alone anymore</i>
         </h1>
         <span className="text-[#FFFFFFCC] mt-4 block">
           Whether you need immediate support or ongoing care, we’re here to help you through this journey.
         </span>
         <div className="flex flex-col sm:flex-row gap-6 mt-8">
-          <Button className="border-white/90 text-[#009367] bg-white hover:text-white rounded px-4 py-5">
+          <Button className="border-white/90 text-[#009367] bg-white hover:text-white hover:bg-black rounded px-4 py-5">
             <Link href={"/"}>Call crisis line</Link>
           </Button>
-          <Button className="border-white/90 text-white bg-[#009367] hover:text-white rounded px-4 py-5">
+          <Button className="border-white/90 text-[#009367] rounded px-4 py-5 bg-white hover:text-white hover:bg-black cursor-pointer">
             <Link href={"/"}>
-              <MailSearch className="mr-2" /> Email Support
+              <MailSearch /> 
             </Link>
+            Email Support
           </Button>
         </div>
       </section>

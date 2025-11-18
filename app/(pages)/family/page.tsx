@@ -6,7 +6,7 @@ import SiteFooter from "@/app/_components/Footer";
 import SiteHeader from "@/components/site-header";
 const family = () => {
   return (
-    <div className="mx-auto max-w-[1780px] overflow-x-hidden px-2 sm:px-4 md:px-6">
+    <div className="mx-4">
       <div className="h-7 rounded-t-full bg-emerald-600" />
       <div className="mx-auto w-full max-w-[1780px] overflow-x-hidden">
         <div className="relative bg-[url('/mbona1.png')] bg-cover bg-center min-h-[400px] sm:min-h-[500px] md:h-[578px] mx-auto w-full overflow-x-hidden">
@@ -119,11 +119,11 @@ const family = () => {
             We understand this journey can be emotional. We&apos;re here to
             support you.
           </span>
-          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8 mt-8 sm:mt-10 md:mt-12">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-6 md:gap-8 mt-8 sm:mt-10 md:mt-12">
             <SurvivorCard />
             <SurvivorCard />
             <SurvivorCard />
-            <SurvivorCard />
+            {/* <SurvivorCard /> */}
           </div>
         </div>
       </main>

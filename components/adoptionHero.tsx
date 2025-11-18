@@ -5,10 +5,10 @@ import { Button } from "@/components/ui/button";
 
 export default function AdoptionHero() {
   return (
-    < div className="mx-[10px]">
+    < div className="mx-[16px]">
       <div className="h-7 rounded-t-full bg-emerald-600" />
     
-      <section className="relative isolate  bg-black text-white w-full min-h-[420px] sm:min-h-[520px] overflow-hidden ">
+      <section className="relative isolate  bg-black text-white w-full min-h-[420px] sm:min-h-[616px] overflow-hidden ">
         {/* Top green strip */}
        
 
@@ -22,7 +22,7 @@ export default function AdoptionHero() {
 
         {/* Content with image */}
         <div className="relative z-10 mx-auto max-w-6xl px-6 pb-16 pt-12 sm:px-10 sm:pt-16 flex items-center justify-between">
-          <div className="max-w-2xl">
+          <div className="max-w-2xl mt-15">
 
             <h1 className="text-[34px] font-bold leading-tight sm:text-7xl sm:ml-5 lg:ml-20">
               ADOPT ME
@@ -42,7 +42,7 @@ export default function AdoptionHero() {
             </div>
           </div>
 
-          <div className="hidden lg:block absolute right-30 top-1/2 transform -translate-y-1/2 w-1/3">
+          <div className="hidden lg:block absolute right-30 top-70 transform -translate-y-1/2 w-1/3">
             <Image
               src="/adoptme.png"
               alt="Children waiting for adoption"
@@ -52,7 +52,7 @@ export default function AdoptionHero() {
               priority
             />
           </div>
-          <div className="hidden lg:block absolute left-230 top-21 pl-30">
+          <div className="hidden lg:block absolute left-230 top-35 pl-30">
             <Image 
             src="/lines.png"
             alt=""
