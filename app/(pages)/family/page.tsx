@@ -15,7 +15,7 @@ const family = () => {
           <section className="relative z-10 px-4 sm:px-6 md:px-8">
             <div className="flex flex-col items-center justify-center mt-8">
               <h2 className="text-center font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-[60px] text-white mt-6 sm:mt-8 md:mt-10 px-4 tracking-widest">
-                Find Lost <span>Family</span>
+                Find Lost <span className="bg-gradient-to-r from-[#009367] to-[#FFFFFF] bg-clip-text text-transparent">Family</span>
               </h2>
               <p className=" text-white tracking-widest mx-auto w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[40%] text-center mt-4 sm:mt-5 font-poppins text-sm sm:text-base px-4">
                 A safe space for everyone to share memories, search for lost
@@ -34,7 +34,7 @@ const family = () => {
           </section>
         </div>
         <main className="flex flex-col items-center justify-center px-4 sm:px-6 md:px-8">
-          <div className="mt-6 sm:mt-8 w-full max-w-7xl p-4 sm:p-6 bg-white rounded-2xl">
+          <div className="mt-6 sm:mt-6 w-full max-full p-4 sm:p-6 bg-white rounded-2xl">
             <div className="flex flex-col xl:flex-row gap-4 items-center">
               <div className="flex items-center w-full max-w-full sm:max-w-[500px] md:max-w-[601px] min-h-[60px] sm:h-[70px] gap-3 px-4 py-3 rounded-xl border border-gray-200">
                 <Search className="w-5 h-5 text-gray-500 flex-shrink-0" />
@@ -77,7 +77,7 @@ const family = () => {
           </div>
         </main>
       </div>
-      <section className="bg-[#F9FAFB] min-h-auto flex flex-col mt-12 sm:mt-16 md:mt-20 lg:mt-30 pb-10 sm:pb-16 md:pb-20">
+      <section className="bg-[#F9FAFB] min-h-auto flex flex-col mt-12 sm:mt-16 md:mt-20 lg:mt-15 pb-10 sm:pb-16 md:pb-20">
         <div className="text-center mt-6 sm:mt-8 md:mt-10 px-4">
           <h2 className="font-semibold text-xl sm:text-2xl md:text-[25px]">
             Memory Wall
