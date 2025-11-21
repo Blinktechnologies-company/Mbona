@@ -95,7 +95,7 @@ const family = () => {
       </section>
 
       <main className="bg-white min-h-screen mt-12 sm:mt-16 md:mt-20 px-4 sm:px-6 md:px-8">
-        <div className="text-center mt-6 sm:mt-8 md:mt-10 w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[33%] mx-auto">
+        <div className="text-center mt-6 sm:mt-8 md:mt-10 w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[50%] mx-auto">
           <h2 className="font-semibold text-xl sm:text-2xl md:text-[25px] mb-4 sm:mb-5">
             Everyone is welcome
           </h2>
@@ -129,7 +129,7 @@ const family = () => {
           </div>
         </div>
       </main>
-      <div className="mt-20 sm:mt-30 md:mt-40 lg:mt-60">
+      <div className="mt-20 sm:mt-30 md:mt-40 lg:mt-20">
         <SiteFooter />
       </div>
     </div>
