@@ -10,16 +10,16 @@ export default function SiteHeader({ variant = "overlay" }: { variant?: "overlay
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="mx-auto max-w-6xl px-6 pt-4 relative z-10">
+    <div className="mx-auto w-full pt-4 relative z-10 ">
       <header
         className={`px-0 py-2 ${
           isOverlay ? "bg-transparent" : "rounded-xl border border-zinc-200 bg-white "
         }`}
       >
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between ">
 
           <div
-            className={`text-lg font-bold ${
+            className={`text-lg font-bold ml-30 ${
               isOverlay ? "text-white" : "text-emerald-800"
             }`}
           >
@@ -28,7 +28,7 @@ export default function SiteHeader({ variant = "overlay" }: { variant?: "overlay
 
 
           <nav
-            className={`hidden items-center justify-center gap-8 text-md sm:flex font-bold  ${
+            className={`hidden items-center justify-center ml-80 gap-20 text-md sm:flex font-semibold  ${
               isOverlay ? "text-white/90" : "text-zinc-700"
             }`}
           >
@@ -40,7 +40,7 @@ export default function SiteHeader({ variant = "overlay" }: { variant?: "overlay
             <Link href="/about" className="hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500">About</Link>
           </nav>
 
-          <div className="sm:flex hidden justify-end">
+          <div className="sm:flex hidden justify-end mr-15">
             <Button
               asChild
               variant="outline"

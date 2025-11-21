@@ -13,11 +13,11 @@ const family = () => {
           <div className="absolute inset-0 bg-black/80"></div>
           <SiteHeader />
           <section className="relative z-10 px-4 sm:px-6 md:px-8">
-            <div className="flex flex-col items-center justify-center">
-              <h2 className="text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[60px] text-white mt-6 sm:mt-8 md:mt-10 px-4">
-                Find Lost Family
+            <div className="flex flex-col items-center justify-center mt-8">
+              <h2 className="text-center font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-[60px] text-white mt-6 sm:mt-8 md:mt-10 px-4 tracking-widest">
+                Find Lost <span>Family</span>
               </h2>
-              <p className="font-medium text-white tracking-widest mx-auto w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[40%] text-center mt-4 sm:mt-5 font-poppins text-sm sm:text-base px-4">
+              <p className=" text-white tracking-widest mx-auto w-full max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[40%] text-center mt-4 sm:mt-5 font-poppins text-sm sm:text-base px-4">
                 A safe space for everyone to share memories, search for lost
                 family members, and celebrate reunions. Whether you&apos;re a
                 genocide survivor or looking for any missing relative, every
