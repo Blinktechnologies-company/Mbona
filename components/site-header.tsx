@@ -17,7 +17,7 @@ export default function SiteHeader({ variant = "overlay" }: { variant?: "overlay
         }`}
       >
         <div className="flex items-center justify-between">
-          
+
           <div
             className={`text-lg font-bold ${
               isOverlay ? "text-white" : "text-emerald-800"
@@ -26,13 +26,13 @@ export default function SiteHeader({ variant = "overlay" }: { variant?: "overlay
             Mbona
           </div>
 
-          
+
           <nav
             className={`hidden items-center justify-center gap-8 text-md sm:flex font-bold  ${
               isOverlay ? "text-white/90" : "text-zinc-700"
             }`}
           >
-          
+
             <Link href="/" className="hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500">Home</Link>
             <Link href="/adoption" className="hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500">Adoption</Link>
             <Link href="/family" className="hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500">Find Family</Link>
@@ -53,7 +53,7 @@ export default function SiteHeader({ variant = "overlay" }: { variant?: "overlay
             </Button>
           </div>
 
-        
+
           <button
             className="md:hidden text-white"
             onClick={() => setOpen(!open)}
@@ -62,7 +62,7 @@ export default function SiteHeader({ variant = "overlay" }: { variant?: "overlay
           </button>
         </div>
 
-        
+
         {open && (
           <nav
             className={`md:hidden mt-4 flex flex-col gap-4 p-4 rounded-xl ${
@@ -75,7 +75,7 @@ export default function SiteHeader({ variant = "overlay" }: { variant?: "overlay
             <Link href="/support" onClick={() => setOpen(false)}>Support</Link>
             <Link href="/about" onClick={() => setOpen(false)}>About</Link>
 
-           
+
             <Button
               asChild
               variant="outline"

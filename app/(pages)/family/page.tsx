@@ -44,7 +44,7 @@ const family = () => {
                   className="w-full text-gray-900 placeholder:text-gray-500 focus:outline-none text-sm sm:text-base"
                 />
               </div>
-              <div className="flex flex-wrap gap-3 sm:gap-4 md:gap-8 justify-center text-center w-full xl:w-auto">
+              <div className="flex gap-3 sm:gap-4 md:gap-8 justify-center text-center w-full xl:w-auto">
                 {[
                   "All posts",
                   "Seeking family",
