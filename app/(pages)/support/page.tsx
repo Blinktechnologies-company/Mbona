@@ -9,11 +9,12 @@ import Reach from "@/app/_components/Reach";
 import SiteFooter from "@/app/_components/Footer";
 import SiteHeader from "@/components/site-header";
 import Emergency from "@/app/_components/Emergency";
+import Support from "@/app/_components/Support";
 
 export default function SupportPage() {
   return (
-    <div className="mx-2 sm:mx-4 overflow-x-hidden">
-      <div className="h-7 rounded-t-full bg-emerald-600" />
+    <div className="overflow-x-hidden">
+      <div className="h-7 bg-emerald-600" />
 
       {/* Header */}
       <div className="background-primary">
@@ -138,14 +139,16 @@ export default function SupportPage() {
             If you&apos;re in crisis or need immediate support, these resources are available 24/7
           </p>
         </div>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-6">
-          <SurvivorCard />
-          <SurvivorCard />
-          <SurvivorCard />
+      <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-6 md:gap-8 mt-8 sm:mt-10 md:mt-12 mb-10">
+          <Support />
+          <Support />
+          <Support />
+          <Support />
+
         </div>
 
         {/* How to get help */}
-        <div className="text-center mt-10">
+        <div className="text-center mt-10 pb-25">
           <h1 className="font-semibold text-[25px]">How to get help</h1>
           <p className="font-medium mt-2">Taking the first step to get support can be difficult. Here’s how we can help.</p>
           <div className="flex flex-col sm:flex-row gap-6 mt-6 items-center justify-center">
@@ -157,7 +160,7 @@ export default function SupportPage() {
       </main>
 
       {/* Call to action */}
-      <section className="mt-20 bg-[#009367] flex flex-col items-center justify-center text-white py-16 px-4 text-center">
+      <section className=" bg-[#009367] flex flex-col items-center justify-center text-white py-16 px-4 text-center">
         <h1 className="font-semibold text-2xl sm:text-4xl">
           <i>You are not alone anymore</i>
         </h1>
@@ -170,7 +173,7 @@ export default function SupportPage() {
           </Button>
           <Button className="border-white/90 text-[#009367] rounded px-4 py-5 bg-white hover:text-white hover:bg-black cursor-pointer">
             <Link href={"/"}>
-              <MailSearch /> 
+              <MailSearch />
             </Link>
             Email Support
           </Button>
