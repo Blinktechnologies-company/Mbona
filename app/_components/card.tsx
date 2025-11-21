@@ -13,7 +13,7 @@ const Card = () => {
               8 years old in Kigali
             </span>
             <span className="text-[#009367] text-xs sm:text-sm">Kigali</span>
-            <span className="bg-[#00936747] px-4 sm:px-6 md:px-8 rounded-full text-[#009367] text-xs sm:text-sm">
+            <span className="bg-[#00936747]  px-4 sm:px-6 md:px-4 rounded-full text-[#009367] text-xs sm:text-sm">
               Genocide Survivor
             </span>
           </div>
