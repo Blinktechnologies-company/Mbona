@@ -16,7 +16,7 @@ const Emergency = () => {
         +250 788 678 901
       </span>
       <span className="mb-2 flex text-[#000000CC]">Available 24/7</span>
-    
+
     </div>
   );
 };
