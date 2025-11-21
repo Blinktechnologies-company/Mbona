@@ -4,6 +4,7 @@ import Card from "@/app/_components/card";
 import SurvivorCard from "@/app/_components/survivor-card";
 import SiteFooter from "@/app/_components/Footer";
 import SiteHeader from "@/components/site-header";
+import Support from "@/app/_components/Support";
 const family = () => {
   return (
     <div className="mx-4">
@@ -120,9 +121,10 @@ const family = () => {
             support you.
           </span>
           <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-6 md:gap-8 mt-8 sm:mt-10 md:mt-12">
-            <SurvivorCard />
-            <SurvivorCard />
-            <SurvivorCard />
+            <Support />
+            <Support />
+            <Support />
+            <Support />
             {/* <SurvivorCard /> */}
           </div>
         </div>
