@@ -1,33 +1,28 @@
-"use client";
+"use client"
 
-import AdoptionHero from "@/components/adoptionHero";
-import SiteFooter from "@/components/footer";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import {
-  DropdownMenu,
-  DropdownMenuTrigger,
-  DropdownMenuContent,
-  DropdownMenuItem,
-} from "@/components/ui/dropdown-menu";
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import AdoptionHero from "@/components/adoptionHero"
+import SiteFooter from "@/components/footer"
+import { Button } from "@/components/ui/button"
+import { Bookmark } from "lucide-react"
+import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "@/components/ui/dropdown-menu"
+import { motion, useInView } from "framer-motion"
+import { useRef } from "react"
 
 export default function AdoptionPage() {
-   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-60px" });
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, margin: "-60px" })
   return (
     <div className="space-y-0">
       <main className="space-y-14">
         <AdoptionHero />
 
         {/* Search Section */}
-        <section className="mx-auto max-w-6xl px-6">
-          <div className="grid gap-3 sm:grid-cols-[1fr_auto_auto]">
+        <section className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="grid gap-3 sm:gap-3 grid-cols-1 sm:grid-cols-[1fr_auto_auto]">
             {/* Search input */}
             <input
               placeholder="Search by name or short description"
-              className="h-15 rounded border border-zinc-300 px-3 text-sm outline-none focus:border-emerald-600"
+              className="h-12 rounded border border-zinc-300 px-3 text-xs sm:text-[13px] outline-none focus:border-emerald-600 w-full"
             />
 
             {/* AGE DROPDOWN */}
@@ -35,7 +30,7 @@ export default function AdoptionPage() {
               <DropdownMenuTrigger asChild>
                 <Button
                   variant="outline"
-                  className="h-15 border-zinc-300 text-zinc-700 w-45"
+                  className="h-12 border-zinc-300 text-zinc-700 w-full sm:w-45 text-xs sm:text-[13px] bg-transparent"
                 >
                   All ages
                 </Button>
@@ -53,7 +48,7 @@ export default function AdoptionPage() {
               <DropdownMenuTrigger asChild>
                 <Button
                   variant="outline"
-                  className="h-15 border-zinc-300 text-zinc-700 w-45"
+                  className="h-12 border-zinc-300 text-zinc-700 w-full sm:w-45 text-xs sm:text-[13px] bg-transparent"
                 >
                   All genders
                 </Button>
@@ -69,41 +64,32 @@ export default function AdoptionPage() {
         </section>
 
         {/* Cards */}
-        <section className="mx-auto max-w-7xl px-6">
+        <section className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="text-center">
-            <h2 className="text-2xl font-semibold text-emerald-800">
-              Children Waiting for Families
-            </h2>
-            <p className="mt-2 text-zinc-600">
+            <h2 className="text-lg sm:text-xl font-semibold text-emerald-800">Children Waiting for Families</h2>
+            <p className="mt-2 text-zinc-600 text-xs sm:text-sm">
               Meet children hoping to be matched with loving families
             </p>
           </div>
 
-          <div className="mt-8 grid gap-7 sm:grid-cols-3">
+          <div className="mt-8 grid gap-7 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-0 sm:px-4 lg:px-20">
             {Array.from({ length: 3 }).map((_, i) => (
-              <div
-                key={i}
-                className="rounded-xl border border-zinc-200 bg-white p-4 shadow-xl h-130"
-              >
-                <div className="mb-4 h-40 w-full overflow-hidden rounded-lg bg-zinc-200 bg-[url('/adoptChildren.png')] bg-cover"></div>
+              <div key={i} className="rounded-xl border border-zinc-200 bg-white p-4 shadow-xl">
+                <div className="mb-4 h-42 w-full overflow-hidden rounded-lg bg-zinc-200 bg-[url('/adoptChildren.png')] bg-cover"></div>
 
-                <div className="text-lg font-bold text-zinc-900 pb-4">
-                  Mukiza
-                </div>
-                <div className="text-sm text-emerald-700 pb-4 ">
-                  6 years • Kigali
-                </div>
+                <div className="text-base sm:text-lg font-bold text-zinc-900 pb-4">Mukiza</div>
+                <div className="text-xs sm:text-[14px] text-emerald-700 pb-1.5">6 years • Kigali</div>
 
-                <p className="mt-2 text-sm text-zinc-700">
-                  A safe space for genocide survivors to post memories, names,
-                  photos, or fragments of identity. AI-assisted matching helps
-                  identify potential family links.
+                <p className="mt-2 text-xs sm:text-s[14px] text-zinc-700">
+                  A safe space for genocide survivors to post memories, names, photos, or fragments of identity.
+                  AI-assisted matching helps identify potential family links.
                 </p>
 
-                <hr className="border-t-2 border-zinc-400/10 mt-6" />
+                <hr className="border-t-2 border-zinc-400/10 mt-4" />
 
-                <Button className="mt-8 w-70 bg-emerald-700 text-white hover:bg-emerald-800 rounded hover:cursor-pointer">
-                  <span className="mr-20">Learn more and Apply</span>
+                <Button className="mt-4 mb-3 w-full lg:w-65 bg-emerald-700 text-white hover:bg-emerald-800 rounded hover:cursor-pointer h-7 text-xs sm:text-[11px]">
+                  <Bookmark className="h-4 sm:h-5 w-4 sm:w-5" />
+                  <span className="">Learn more and Apply</span>
                 </Button>
               </div>
             ))}
@@ -111,23 +97,20 @@ export default function AdoptionPage() {
         </section>
 
         {/* Circles Section */}
-        <section className="py-16">
-          <div className="mx-auto max-w-6xl px-6 text-center">
-            <h2 className="text-2xl font-semibold text-zinc-900">
-              How the Adoption Process Works
-            </h2>
-            <p className="mt-2 text-zinc-700">
-              Simple, transparent, and trauma-informed steps
+        <section className="py-3">
+          <div className="mx-auto max-w-6xl px-4 sm:px-8 text-center">
+            <h2 className="text-base sm:text-lg lg:text-xl font-bold text-zinc-900">How the Adoption Process Works</h2>
+            <p className="mt-2 text-zinc-700 text-xs sm:text-sm font-semibold">
+              Our streamlined process ensures the best match between children and families
             </p>
 
-            <div className="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-4">
+            <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10">
               {processItems.map((item) => (
                 <div key={item.title} className="text-center">
-                  <div className="mx-auto mb-4 h-24 w-24 rounded-full border-2 border-zinc-400" />
-                  <div className="text-base font-extrabold text-zinc-900">
-                    {item.title}
-                  </div>
-                  <p className="mt-2 text-sm leading-6 text-zinc-700 max-w-[240px] mx-auto">
+                  <div className="mx-auto mb-4 h-16 sm:h-18 w-16 sm:w-18 rounded-full border-2 border-zinc-400" />
+
+                  <div className="text-xs sm:text-sm lg:text-[13px] font-extrabold text-zinc-900">{item.title}</div>
+                  <p className="mt-4 text-xs sm:text-[12px] leading-4 text-zinc-700 max-w-xs sm:max-w-sm mx-auto">
                     {item.desc}
                   </p>
                 </div>
@@ -137,22 +120,23 @@ export default function AdoptionPage() {
         </section>
 
         {/* Support cards */}
-        <hr className="border-t-2 border-emerald-300" />
+        <hr className="border-t-2 border-emerald-200" />
 
-        <section className="mx-auto max-w-7xl px-6 pb-8 mb-10">
+        <section className="mx-auto max-w-7xl px-4 sm:px-6 pb-8 mb-10">
           <div className="text-center">
-            <h2 className="text-2xl font-semibold text-emerald-800">
-              Support for Adoptive Families
-            </h2>
-            <p className="mt-2 text-zinc-600">
-              we provide ongoing support to help your family thrive for a better
-              future
+            <h2 className="text-base sm:text-lg font-semibold text-emerald-800">Support for Adoptive Families</h2>
+            <p className="mt-2 text-zinc-600 text-xs sm:text-[13px]">
+              we provide ongoing support to help your family thrive for a better future
             </p>
           </div>
 
-          <div className="mt-8 grid gap-8 sm:grid-cols-4">
+          <div
+            className="mt-10 grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 px-0 sm:px-4"
+            style={{ alignItems: "start" }}
+          >
             {supportCards.map((c, i) => {
-             
+              const isLowered = i % 2 === 1
+              const offsetClass = isLowered ? "lg:translate-y-12" : "lg:translate-y-0"
 
               return (
                 <motion.div
@@ -161,12 +145,13 @@ export default function AdoptionPage() {
                   initial={{ opacity: 0, y: 60 }}
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.6, delay: i * 0.2 }}
-                  className="rounded-md bg-emerald-700 p-6 text-white shadow-md hover:cursor-pointer hover:shadow-xl"
+                  className={`rounded-md bg-emerald-700 p-4 sm:p-6 mt-2 mb-4 text-white shadow-md hover:cursor-pointer hover:shadow-xl flex flex-col items-center text-center ${offsetClass}`}
                 >
-                  <div className="mb-2 text-lg font-semibold">{c.title}</div>
-                  <p className="text-sm text-white/90">{c.desc}</p>
+                  <Bookmark className="w-5 sm:w-6 h-5 sm:h-6" />
+                  <div className="mb-2 text-xs sm:text-sm font-semibold mt-2">{c.title}</div>
+                  <p className="text-xs mt-2 sm:text-[12px] text-white/90">{c.desc}</p>
                 </motion.div>
-              );
+              )
             })}
           </div>
         </section>
@@ -174,36 +159,36 @@ export default function AdoptionPage() {
 
       <SiteFooter />
     </div>
-  );
+  )
 }
 
 const processItems = [
   {
     title: "Trauma-Informed Approach",
-    desc: "Our programs prioritize safety and privacy to avoid re-triggering trauma.",
+    desc: "Everything is optional, private and designed to avoid re-triggering trauma",
   },
   {
     title: "Family-Centered Support",
-    desc: "We engage families in every step to ensure sustainable healing and reconnection.",
+    desc: "Everything is optional, private and designed to avoid re-triggering trauma",
   },
   {
     title: "Child-Focused Services",
-    desc: "Activities and interventions are tailored to meet the unique needs of each child.",
+    desc: "Everything is optional, private and designed to avoid re-triggering trauma",
   },
   {
     title: "Community Integration",
-    desc: "We collaborate with local communities to create supportive environments for growth.",
+    desc: "Everything is optional, private and designed to avoid re-triggering trauma",
   },
-];
+]
 
 const supportCards = [
   {
     title: "Counseling & Guidance",
-    desc: "Caring, trauma-aware counseling and guidance throughout the journey",
+    desc: "Caring, trauma counseling and guidance throughout the journey",
   },
   {
     title: "Document Assistance",
-    desc: "Step-by-step help to prepare, verify and submit required documents",
+    desc: "Step-by-step help to prepare, and submit required documents",
   },
   {
     title: "Community Support",
@@ -213,4 +198,4 @@ const supportCards = [
     title: "Community Integration",
     desc: "Connect with mentors and families who have walked the path before",
   },
-];
+]
