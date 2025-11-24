@@ -7,8 +7,8 @@ import SiteHeader from "@/components/site-header";
 import Support from "@/app/_components/Support";
 const family = () => {
   return (
-    <div className="">
-      <div className="h-5.5 bg-emerald-600" />
+    <div className="mx-4">
+      <div className="h-7 rounded-t-full bg-emerald-600" />
       <div className="mx-auto w-full overflow-x-hidden">
         <div className="relative bg-[url('/mbona1.png')] bg-cover bg-center min-h-[400px] sm:min-h-[500px] md:h-[510px] mx-auto w-full overflow-x-hidden">
           <div className="absolute inset-0 bg-black/80"></div>
