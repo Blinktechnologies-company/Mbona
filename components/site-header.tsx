@@ -16,50 +16,36 @@ export default function SiteHeader({ variant = "overlay" }: { variant?: "overlay
 
   return (
     <div className="mx-auto max-w-6xl px-6 pt-4 relative z-10">
-      <header className={`px-0 py-2 ${isOverlay ? "bg-transparent" : "rounded-xl border border-zinc-200 bg-white "}`}>
+      <header
+        className={`px-0 py-2 ${
+          isOverlay ? "bg-transparent" : "rounded-xl border border-zinc-200 bg-white "
+        }`}
+      >
         <div className="flex items-center justify-between">
-          <div className={`text-lg font-bold ${isOverlay ? "text-white" : "text-emerald-800"}`}>Mbona</div>
+          
+          <div
+            className={`text-lg font-bold ${
+              isOverlay ? "text-white" : "text-emerald-800"
+            }`}
+          >
+            Mbona
+          </div>
 
-          {/* Desktop Navbar */}
+          
           <nav
-            className={`hidden items-center justify-center gap-8 text-[12px] sm:flex font-medium ${
+            className={`hidden items-center justify-center gap-8 text-md sm:flex font-bold  ${
               isOverlay ? "text-white/90" : "text-zinc-700"
             }`}
           >
-            <Link
-              href="/"
-              className={`${pathname === "/" ? activeClass : ""} hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500`}
-            >
-              Home
-            </Link>
-            <Link
-              href="/adoption"
-              className={`${pathname === "/adoption" ? activeClass : ""} hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500`}
-            >
-              Adoption
-            </Link>
-            <Link
-              href="/family"
-              className={`${pathname === "/family" ? activeClass : ""} hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500`}
-            >
-              Find Family
-            </Link>
-            <Link
-              href="/support"
-              className={`${pathname === "/support" ? activeClass : ""} hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500`}
-            >
-              Support
-            </Link>
-            <Link
-              href="/about"
-              className={`${pathname === "/about" ? activeClass : ""} hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500`}
-            >
-              About
-            </Link>
+          
+            <Link href="/" className="hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500">Home</Link>
+            <Link href="/adoption" className="hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500">Adoption</Link>
+            <Link href="/family" className="hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500">Find Family</Link>
+            <Link href="/support" className="hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500">Support</Link>
+            <Link href="/about" className="hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500">About</Link>
           </nav>
 
-          {/* Desktop Button */}
-          <div className="hidden md:flex justify-end">
+          <div className="sm:flex hidden justify-end">
             <Button
               asChild
               variant="outline"
@@ -73,51 +59,29 @@ export default function SiteHeader({ variant = "overlay" }: { variant?: "overlay
             </Button>
           </div>
 
-          {/* Mobile Toggle */}
-          <button className="md:hidden text-white" onClick={() => setOpen(!open)}>
+        
+          <button
+            className="md:hidden text-white"
+            onClick={() => setOpen(!open)}
+          >
             {open ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
 
-        {/* Mobile Menu */}
+        
         {open && (
           <nav
             className={`md:hidden mt-4 flex flex-col gap-4 p-4 rounded-xl text-[12px] ${
               isOverlay ? "bg-white/10 backdrop-blur text-white" : "bg-white text-zinc-700"
             }`}
           >
-            <Link href="/" onClick={() => setOpen(false)} className={`${pathname === "/" ? activeClass : ""}`}>
-              Home
-            </Link>
-            <Link
-              href="/adoption"
-              onClick={() => setOpen(false)}
-              className={`${pathname === "/adoption" ? activeClass : ""}`}
-            >
-              Adoption
-            </Link>
-            <Link
-              href="/find-family"
-              onClick={() => setOpen(false)}
-              className={`${pathname === "/find-family" ? activeClass : ""}`}
-            >
-              Find Family
-            </Link>
-            <Link
-              href="/support"
-              onClick={() => setOpen(false)}
-              className={`${pathname === "/support" ? activeClass : ""}`}
-            >
-              Support
-            </Link>
-            <Link
-              href="/about"
-              onClick={() => setOpen(false)}
-              className={`${pathname === "/about" ? activeClass : ""}`}
-            >
-              About
-            </Link>
+            <Link href="/" onClick={() => setOpen(false)}>Home</Link>
+            <Link href="/adoption" onClick={() => setOpen(false)}>Adoption</Link>
+            <Link href="/find-family" onClick={() => setOpen(false)}>Find Family</Link>
+            <Link href="/support" onClick={() => setOpen(false)}>Support</Link>
+            <Link href="/about" onClick={() => setOpen(false)}>About</Link>
 
+           
             <Button
               asChild
               variant="outline"

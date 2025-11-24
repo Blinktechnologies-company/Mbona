@@ -1,6 +1,8 @@
+// next.config.mjs
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    turbo: false, 
+    // turbo: true, // ❌ Remove this
   },
 };
 

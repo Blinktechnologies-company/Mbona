@@ -7,7 +7,7 @@ const SurvivorCard = () => {
       <h2 className="font-bold mb-3 sm:mb-4 text-sm sm:text-base md:text-lg text-center">
         Genocide Survivors
       </h2>
-      <span className="text-center text-[#000000CC] font-medium w-full sm:w-[85%] md:w-[70%] text-xs sm:text-sm md:text-base px-2">
+      <span className="text-center text-[#000000CC] font-medium w-full text-[13px] sm:text-sm md:text-base px-2">
         For those who lost family during the 1994 genocide against the Tutsi.
         Share memories and search for lost loved ones.
       </span>
