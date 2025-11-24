@@ -31,18 +31,41 @@ export default function SiteHeader({ variant = "overlay" }: { variant?: "overlay
             Mbona
           </div>
 
-          
-          <nav
-            className={`hidden items-center justify-center gap-8 text-md sm:flex font-bold  ${
+              <nav
+            className={`hidden items-center justify-center gap-8 text-[12px] sm:flex font-medium ${
               isOverlay ? "text-white/90" : "text-zinc-700"
             }`}
           >
-          
-            <Link href="/" className="hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500">Home</Link>
-            <Link href="/adoption" className="hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500">Adoption</Link>
-            <Link href="/family" className="hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500">Find Family</Link>
-            <Link href="/support" className="hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500">Support</Link>
-            <Link href="/about" className="hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500">About</Link>
+            <Link
+              href="/"
+              className={`${pathname === "/" ? activeClass : ""} hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500`}
+            >
+              Home
+            </Link>
+            <Link
+              href="/adoption"
+              className={`${pathname === "/adoption" ? activeClass : ""} hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500`}
+            >
+              Adoption
+            </Link>
+            <Link
+              href="/family"
+              className={`${pathname === "/family" ? activeClass : ""} hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500`}
+            >
+              Find Family
+            </Link>
+            <Link
+              href="/support"
+              className={`${pathname === "/support" ? activeClass : ""} hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500`}
+            >
+              Support
+            </Link>
+            <Link
+              href="/about"
+              className={`${pathname === "/about" ? activeClass : ""} hover:underline hover:decoration-emerald-500 decoration-2 underline-offset-4 hover:text-emerald-500`}
+            >
+              About
+            </Link>
           </nav>
 
           <div className="sm:flex hidden justify-end">

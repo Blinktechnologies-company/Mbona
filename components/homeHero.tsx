@@ -41,7 +41,7 @@ export default function HomeHero() {
             <h1 className="text-[34px] font-semibold leading-tight sm:text-3xl">
               We are Rebuilding
               <br />
-              <span className="text-emerald-400/80">Families &</span> Restoring
+              <span className="bg-gradient-to-r from-[#009367ec] to-[#80bba7] bg-clip-text text-transparent">Families &</span> Restoring
               <br />
               Hope
             </h1>

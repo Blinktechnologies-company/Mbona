@@ -14,7 +14,7 @@ import Support from "@/app/_components/Support";
 export default function SupportPage() {
   return (
     <div className="overflow-x-hidden">
-      <div className="h-7 bg-emerald-600" />
+      <div className="h-5.5 bg-emerald-600" />
 
       {/* Header */}
       <div className="background-primary">
@@ -22,7 +22,7 @@ export default function SupportPage() {
       </div>
 
       {/* Hero Section */}
-      <main className="relative max-h-[550px] background-primary">
+      <main className="relative sm:max-h-[437px] background-primary">
         {/* Decorative dots - hide on small screens */}
         <div className="hidden md:block absolute top-20 left-10 w-2 h-2 bg-green-400 rounded-full"></div>
         <div className="hidden md:block absolute top-40 left-32 w-2 h-2 bg-yellow-400 rounded-full"></div>
@@ -35,23 +35,23 @@ export default function SupportPage() {
         <div className="container mx-auto px-4 sm:px-6 py-16 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[600px]">
             {/* Text content */}
-            <div className="mb-50 ml-30">
-              <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-tight tracking-widest text-white">
+            <div className="mb-75 ml-30">
+              <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight tracking-widest text-white">
                 Support <br /> Resources
               </h1>
-              <p className="text-base sm:text-lg text-white/90 max-w-lg leading-relaxed tracking-widest font-medium">
+              <p className="text-[14px] sm:text-[15px] text-white/90 max-w-lg leading-relaxed tracking-widest font-medium">
                 Access professional counselling, legal aid, support groups, and community resources. You
                 don&apos;t have to go through this journey alone.
               </p>
             </div>
 
             {/* Hero image */}
-            <div className="relative bottom-23 ml-20">
+            <div className="relative bottom-40 ml-20">
               <Image
                 src="/child.png"
                 alt="Children"
-                width={400}
-                height={400}
+                width={370}
+                height={370}
                 className="object-contain max-h-[600px] lg:block hidden "
               />
               {/* Decorative shapes - hide on small screens */}
@@ -65,7 +65,7 @@ export default function SupportPage() {
       </main>
 
       {/* Available Resources Section */}
-      <section className="bg-white py-8">
+      <section className="bg-white py-4">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="flex gap-4 overflow-x-auto pb-4 mb-6">
             {[...Array(3)].map((_, i) => (
@@ -75,7 +75,7 @@ export default function SupportPage() {
               >
                 <div className="flex items-center gap-3">
                   <House className="w-5 h-5 text-gray-600" />
-                  <h3 className="text-lg font-semibold text-gray-900">Legal Aid Center</h3>
+                  <h3 className="text-sm font-semibold text-gray-900">Legal Aid Center</h3>
                 </div>
               </div>
             ))}
@@ -95,7 +95,7 @@ export default function SupportPage() {
                 key={i}
                 className="px-4 py-2 sm:px-6 sm:py-4 bg-white border border-white rounded text-gray-900 flex items-center gap-2 hover:bg-gray-50 min-w-[140px] sm:min-w-[155px] transition-colors"
               >
-                <span className="font-normal text-black tracking-wide text-[15px]">{label}</span>
+                <span className="font-normal text-black tracking-wide text-[14px]">{label}</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
             ))}
@@ -104,12 +104,12 @@ export default function SupportPage() {
       </section>
 
       {/* Resource cards section */}
-      <main className="bg-white text-black mt-20">
+      <main className="bg-white text-black mt-8">
         <div className="text-center mb-10">
-          <h1 className="font-semibold text-2xl sm:text-[25px]">Available Resources</h1>
+          <h1 className="font-semibold text-2xl sm:text-[24px]">Available Resources</h1>
           <p className="font-medium text-[#000000CC]">6 resources found</p>
         </div>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 flex-wrap">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 flex-wrap">
           <Foundation />
           <Foundation />
           <Foundation />
@@ -117,14 +117,14 @@ export default function SupportPage() {
       </main>
 
       {/* Emergency Support */}
-      <section className="mt-20 bg-[#E4F3EF4D] py-10">
+      <section className="mt-3 bg-[#E4F3EF4D] py-6">
         <div className="text-center">
-          <h1 className="font-semibold text-2xl sm:text-[25px]">Emergency support</h1>
-          <p className="text-[#000000CC] mt-2">
+          <h1 className="font-semibold text-[22px] sm:text-[22px]">Emergency support</h1>
+          <p className="text-[#000000CC] mt-2 text-[14px] sm:text-[14px]">
             If you&apos;re in crisis or need immediate support, these resources are available 24/7
           </p>
         </div>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-6">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 mt-6 px-5">
           <Emergency />
           <Emergency />
           <Emergency />
@@ -134,12 +134,12 @@ export default function SupportPage() {
       {/* Self-care resources */}
       <main className="bg-[#F9FAFB] flex flex-col items-center justify-center pt-20">
         <div className="text-center">
-          <h1 className="font-semibold text-2xl sm:text-[25px]">Self-Care Resources</h1>
-          <p className="text-[#000000CC] mt-2">
+          <h1 className="font-semibold text-2xl sm:text-[24px]">Self-Care Resources</h1>
+          <p className="text-[#000000CC] mt-2 text-sm">
             If you&apos;re in crisis or need immediate support, these resources are available 24/7
           </p>
         </div>
-      <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-6 md:gap-8 mt-8 sm:mt-10 md:mt-12 mb-10">
+      <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4  mt-8 sm:mt-10 md:mt-12 mb-10">
           <Support />
           <Support />
           <Support />
@@ -150,7 +150,7 @@ export default function SupportPage() {
         {/* How to get help */}
         <div className="text-center mt-10 pb-25">
           <h1 className="font-semibold text-[25px]">How to get help</h1>
-          <p className="font-medium mt-2">Taking the first step to get support can be difficult. Here’s how we can help.</p>
+          <p className="font-medium mt-2 text-sm">Taking the first step to get support can be difficult. Here’s how we can help.</p>
           <div className="flex flex-col sm:flex-row gap-6 mt-6 items-center justify-center">
             <Reach />
             <Reach />
@@ -161,17 +161,17 @@ export default function SupportPage() {
 
       {/* Call to action */}
       <section className=" bg-[#009367] flex flex-col items-center justify-center text-white py-16 px-4 text-center">
-        <h1 className="font-semibold text-2xl sm:text-4xl">
+        <h1 className="font-semibold text-xl sm:text-3xl">
           <i>You are not alone anymore</i>
         </h1>
-        <span className="text-[#FFFFFFCC] mt-4 block">
+        <span className="text-[#FFFFFFCC] mt-4 block text-sm sm:text-[14px] ">
           Whether you need immediate support or ongoing care, we’re here to help you through this journey.
         </span>
         <div className="flex flex-col sm:flex-row gap-6 mt-8">
-          <Button className="border-white/90 text-[#009367] bg-white hover:text-white hover:bg-black rounded px-4 py-5">
-            <Link href={"/"}>Call crisis line</Link>
+          <Button className="border-white/90 text-[#009367] bg-white hover:text-white hover:bg-black rounded px-4 py-5 cursor-pointer h-">
+            <Link href={"/"}><p className="text-[13px]">Call crisis line</p></Link>
           </Button>
-          <Button className="border-white/90 text-[#009367] rounded px-4 py-5 bg-white hover:text-white hover:bg-black cursor-pointer">
+          <Button className="border-white/90 text-[#009367] rounded px-4 py-5 bg-white hover:text-white hover:bg-black cursor-pointer text-[13px]">
             <Link href={"/"}>
               <MailSearch />
             </Link>

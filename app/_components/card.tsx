@@ -17,27 +17,28 @@ const Card = () => {
               Genocide Survivor
             </span>
           </div>
-          <p className="text-[#000000CC] mb-6 sm:mb-8 md:mb-5 text-sm sm:text-base">
+          <p className="text-[#000000CC] mb-6 sm:mb-8 md:mb-5 text-[14px] sm:text-[14px]">
             Looking for my sister Maria who was 8 years old in 1994. We were
             separated in Nyamata. She had a small scar on the left hand
           </p>
           <ol className="">
             <h2 className="font-bold text-sm sm:text-base mb-2">Memories</h2>
-            <li className="text-sm sm:text-base mb-1">
+            <li className="text-sm sm:text-[14px] mb-1">
               We lived near the church
             </li>
-            <li className="text-sm sm:text-base mb-1">She loved to sing</li>
-            <li className="text-sm sm:text-base mb-4 sm:mb-6 md:mb-8">
+
+            <li className="text-[14px] sm:text-[14px] mb-1">She loved to sing</li>
+            <li className="text-[14px] sm:text-[14px] mb-4 sm:mb-6 md:mb-8">
               Our father was a teacher
             </li>
           </ol>
           <hr className="" />
           <Link
-            className="flex items-center justify-center mt-6 sm:mt-8 md:mt-10 bg-[#009367] w-full sm:w-[200px] md:w-[251px] min-h-[45px] sm:h-[51px] px-4 py-2 sm:py-3 rounded-lg gap-2 sm:gap-3 text-white text-sm sm:text-base font-medium"
+            className="flex items-center justify-center mt-10 sm:mt-10 md:mt-10 bg-[#009367] w-full sm:w-[200px] md:w-[251px] min-h-[40px] sm:h-[40px] px-4 py-2 sm:py-3 rounded-lg gap-2 sm:gap-3 text-white text-[14px] sm:text-[14px] font-medium"
             href={"/"}
           >
             Contact Amandine
-            <Phone className="text-white w-4 h-4 sm:w-5 sm:h-5 md:w-[24px] md:h-[24px] flex-shrink-0" />
+            <Phone className="text-white w-3.5 h-3.5 sm:w-3.5 sm:h-3.5 md:w-[24px] md:h-[24px] flex-shrink-0" />
           </Link>
         </div>
       </div>
