@@ -75,7 +75,7 @@ export default function SiteHeader({ variant = "overlay" }: { variant?: "overlay
               size="sm"
               className={`border-white/90 text-white bg-white/10 hover:bg-white/10 hover:text-white rounded px-4 h-7`}
             >
-              <Link href="/find-family">
+              <Link href="./family/">
                 <span className="text-[10px]">Find lost family</span>
                 <span aria-hidden className="text-xl">•</span>
               </Link>
