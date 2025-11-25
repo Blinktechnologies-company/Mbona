@@ -111,7 +111,7 @@ export default function SiteHeader({ variant = "overlay" }: { variant?: "overlay
               size="sm"
               className="w-full mt-2 bg-transparent hover:bg-white/10 text-[12px]"
             >
-              <Link href="/find-family">Find lost family</Link>
+              <Link href="/family">Find lost family</Link>
             </Button>
           </nav>
         )}
