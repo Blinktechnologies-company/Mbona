@@ -100,7 +100,7 @@ export default function SiteHeader({ variant = "overlay" }: { variant?: "overlay
           >
             <Link href="/" onClick={() => setOpen(false)}>Home</Link>
             <Link href="/adoption" onClick={() => setOpen(false)}>Adoption</Link>
-            <Link href="/find-family" onClick={() => setOpen(false)}>Find Family</Link>
+            <Link href="/family" onClick={() => setOpen(false)}>Find Family</Link>
             <Link href="/support" onClick={() => setOpen(false)}>Support</Link>
             <Link href="/about" onClick={() => setOpen(false)}>About</Link>
 
